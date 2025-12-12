@@ -29,11 +29,13 @@ import {
   SiFigma,
   SiSupabase,
 } from "react-icons/si";
-import { FaDumbbell } from "react-icons/fa6";
+import { FaDumbbell, FaAppleWhole } from "react-icons/fa6";
 
 import { FaDiscord, FaGithub, FaLinkedin, FaX, FaThreads, FaXTwitter, FaFacebook, FaPinterest, FaWhatsapp, FaReddit, FaTelegram, FaInstagram, FaTiktok } from "react-icons/fa6";
 
 export const iconLibrary: Record<string, IconType> = {
+  dumbbell: FaDumbbell,
+  apple: FaAppleWhole,
   arrowUpRight: HiArrowUpRight,
   arrowRight: HiArrowRight,
   email: HiEnvelope,

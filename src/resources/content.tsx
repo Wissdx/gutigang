@@ -6,7 +6,7 @@ const person: Person = {
   lastName: "Gutierrez",
   name: `Julien Gutierrez`,
   role: "Athlète, Coach & Arbitre en Force Athlétique",
-  avatar: "/images/avatar.jepg",
+  avatar: "/images/avatar-01.jpg",
   email: "juliengutierrez96@gmail.com",
   location: "Europe/Paris", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["Français", "English"], // optional: Leave the array empty if you don't want to display languages
@@ -102,37 +102,65 @@ const about: About = {
     title: "Expérience professionnelle",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Aujourd'hui",
-        role: "Coach principal",
+        company: "GUTIGANG",
+        timeframe: "2020 - Aujourd'hui",
+        role: "Coach en powerlifting",
         achievements: [
           <>
             Accompagnement d'athlètes vers leurs objectifs avec des programmations personnalisées.
           </>,
           <>
-            Organisation de sessions techniques et préparation aux compétitions officielles.
+            Organisation de sessions techniques et préparation / accompagnement aux compétitions officielles.
           </>,
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
           {
-            src: "/images/projects/project-01/cover-01.jpg",
+            src: "/images/projects/project-01/rejoins_gutigang.jpg",
             alt: "Once UI Project",
-            width: 16,
-            height: 9,
+            width: 4,
+            height: 5,
           },
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Coach",
+        company: "SWGYM",
+        timeframe: "2024 - 2025",
+        role: "Coach & Gérant de salle de sport",
         achievements: [
           <>
             Suivi de groupes et ateliers d'initiation à la force.
           </>,
           <>
             Mise en place de plans d'entraînement progressifs et individualisés.
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Équipe de France",
+        timeframe: "2019 - 2025",
+        role: "Athlète de Haut Niveau (-59kg)",
+        achievements: [
+          <>
+            Vice-champion d'Europe Open (2024) et double champion d'Europe de l'Ouest (2021, 2022).
+          </>,
+          <>
+            Meilleures performances : Squat 195kg, Bench 122,5kg, Deadlift 242,5kg (Total 570kg).
+          </>,
+        ],
+        images: [],
+      },
+      {
+        company: "FFForce",
+        timeframe: "2023 - Aujourd'hui",
+        role: "Arbitre National",
+        achievements: [
+          <>
+            Arbitrage officiel sur les compétitions nationales de Force Athlétique.
+          </>,
+          <>
+            Garant du respect des règles techniques et de l'équité sportive.
           </>,
         ],
         images: [],
@@ -144,12 +172,14 @@ const about: About = {
     title: "Études",
     institutions: [
       {
-        name: "Université de Montpellier",
-        description: <>Études en sciences du sport.</>,
+        name: "BTS Diététique",
+        description: <>Nutrition, biochimie, physiopathologie et techniques culinaires.</>,
+        icon: "apple",
       },
       {
-        name: "Certifications",
-        description: <>Formations en préparation physique et arbitrage.</>,
+        name: "CQP IF",
+        description: <>Titre de Coach, Formation en préparation physique, suivi technique, programmation ...</>,
+        icon: "dumbbell",
       },
     ],
   },
@@ -170,18 +200,7 @@ const about: About = {
         ],
         // optional: leave the array empty if you don't want to display images
         images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
+          
         ],
       },
       {
@@ -198,7 +217,7 @@ const about: About = {
         // optional: leave the array empty if you don't want to display images
         images: [
           {
-            src: "/images/projects/project-01/cover-04.jpg",
+            src: "/images/projects/project-01/surcompensation.png",
             alt: "Project image",
             width: 16,
             height: 9,
