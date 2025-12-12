@@ -47,26 +47,26 @@ const home: Home = {
   path: "/",
   image: "/images/og/home.jpg",
   label: "Accueil",
-  title: `Portfolio de ${person.name}`,
-  description: `Site portfolio présentant mon travail en tant que ${person.role}`,
-  headline: <>Partager ma passion et mon parcours</>,
+  title: `GutiGang – Coaching Force Athlétique`,
+  description: `Site officiel du GutiGang. Coaching en Force Athlétique, programmation et suivi par Julien Gutierrez.`,
+  headline: <>GutiGang : Performance & Passion</>,
   featured: {
     display: true,
     title: (
       <Row gap="12" vertical="center">
-        <strong className="ml-4">gutigang</strong>{" "}
+        <strong className="ml-4">Nouveau</strong>{" "}
         <Line background="brand-alpha-strong" vert height="20" />
         <Text marginRight="4" onBackground="brand-medium">
-          Travail à la une
+          Rejoindre l'équipe
         </Text>
       </Row>
     ),
-    href: "/work/building-once-ui-a-customizable-design-system",
+    href: "/work",
   },
   subline: (
     <>
-      Je suis {person.firstName}, {person.role}. Je partage mes entraînements, mes projets
-      <br /> et des conseils autour de la force athlétique.
+      Coaching en Force Athlétique par {person.firstName} {person.lastName}.<br/>
+      Athlète de haut niveau, coach et arbitre national, je vous accompagne vers vos sommets.
     </>
   ),
 };
