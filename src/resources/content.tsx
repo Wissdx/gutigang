@@ -255,42 +255,42 @@ const gallery: Gallery = {
   // These are placeholder images, replace with your own
   images: [
     {
-      src: "/images/gallery/horizontal-1.jpg",
+      src: "/images/gallery/gutigang_swgym_contest.webp",
       alt: "image",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/vertical-4.jpg",
+      src: "/images/gallery/gutigang_limoges.jpg",
+      alt: "image",
+      orientation: "vertical",
+    },
+    // {
+    //   src: "/images/gallery/horizontal-3.jpg",
+    //   alt: "image",
+    //   orientation: "horizontal",
+    // },
+    {
+      src: "/images/gallery/gutigang_france_jr.jpg",
       alt: "image",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/horizontal-3.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-1.jpg",
+      src: "/images/gallery/gutigang_girl_power.jpg",
       alt: "image",
       orientation: "vertical",
     },
     {
-      src: "/images/gallery/vertical-2.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/horizontal-2.jpg",
+      src: "/images/gallery/gutigang_swgym_contest_2.jpg",
       alt: "image",
       orientation: "horizontal",
     },
+    // {
+    //   src: "/images/gallery/horizontal-4.jpg",
+    //   alt: "image",
+    //   orientation: "horizontal",
+    // },
     {
-      src: "/images/gallery/horizontal-4.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-3.jpg",
+      src: "/images/gallery/gutigang_swmeet.jpg",
       alt: "image",
       orientation: "vertical",
     },
