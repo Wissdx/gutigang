@@ -2,7 +2,6 @@ import {
   DataStyleConfig,
   DisplayConfig,
   EffectsConfig,
-  FontsConfig,
   MailchimpConfig,
   ProtectedRoutesConfig,
   RoutesConfig,
@@ -11,7 +10,7 @@ import {
   SocialSharingConfig,
   StyleConfig,
 } from "@/types";
-import { home } from "./index";
+import { home } from "./content";
 
 // IMPORTANT: Replace with your own domain address - it's used for SEO in meta tags and schema
 const baseURL: string = "https://demo.magic-portfolio.com";
@@ -36,40 +35,6 @@ const protectedRoutes: ProtectedRoutesConfig = {
   "/work/automate-design-handovers-with-a-figma-to-code-pipeline": true,
 };
 
-// Import and set font for each variant
-import { Geist } from "next/font/google";
-import { Geist_Mono } from "next/font/google";
-
-const heading = Geist({
-  variable: "--font-heading",
-  subsets: ["latin"],
-  display: "swap",
-});
-
-const body = Geist({
-  variable: "--font-body",
-  subsets: ["latin"],
-  display: "swap",
-});
-
-const label = Geist({
-  variable: "--font-label",
-  subsets: ["latin"],
-  display: "swap",
-});
-
-const code = Geist_Mono({
-  variable: "--font-code",
-  subsets: ["latin"],
-  display: "swap",
-});
-
-const fonts: FontsConfig = {
-  heading: heading,
-  body: body,
-  label: label,
-  code: code,
-};
 
 // default customization applied to the HTML in the main layout.tsx
 const style: StyleConfig = {
@@ -222,7 +187,6 @@ export {
   routes,
   protectedRoutes,
   baseURL,
-  fonts,
   style,
   schema,
   sameAs,

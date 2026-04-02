@@ -22,9 +22,9 @@ const social: Social = [
   // Les liens sont affichés automatiquement.
   // Importez de nouvelles icônes dans /resources/icons.ts
   {
-    name: "Myprotein",
-    icon: "myprotein",
-    link: "https://tidd.ly/3E7Wrl3",
+    name: "ESN (Code: GUTI)",
+    icon: "esn",
+    link: "https://www.esn.com/",
   },
   {
     name: "Instagram",
@@ -65,8 +65,8 @@ const home: Home = {
   },
   subline: (
     <>
-      Coaching en Force Athlétique par {person.firstName} {person.lastName}.<br/>
-      Athlète de haut niveau, coach et arbitre national, je vous accompagne vers vos sommets.
+      Coaching en Force Athlétique par {person.firstName} {person.lastName}.<br />
+      Athlète de haut niveau, arbitre national et coach, je vous accompagne vers vos sommets.
     </>
   ),
 };
@@ -201,7 +201,7 @@ const about: About = {
         ],
         // optional: leave the array empty if you don't want to display images
         images: [
-          
+
         ],
       },
       {

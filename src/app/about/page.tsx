@@ -14,6 +14,7 @@ import {
 } from "@once-ui-system/core";
 import { baseURL, about, person, social } from "@/resources";
 import TableOfContents from "@/components/about/TableOfContents";
+import { SocialLink } from "@/components";
 import styles from "@/components/about/about.module.scss";
 import React from "react";
 
@@ -168,22 +169,23 @@ export default function About() {
                     item.link && (
                       <React.Fragment key={item.name}>
                         <Row s={{ hide: true }}>
-                          <Button
+                          <SocialLink
                             key={item.name}
-                            href={item.link}
-                            prefixIcon={item.icon}
+                            link={item.link}
+                            icon={item.icon}
+                            name={item.name}
                             label={item.name}
                             size="s"
-                            weight="default"
                             variant="secondary"
                           />
                         </Row>
                         <Row hide s={{ hide: false }}>
-                          <IconButton
+                          <SocialLink
                             size="l"
                             key={`${item.name}-icon`}
-                            href={item.link}
+                            link={item.link}
                             icon={item.icon}
+                            name={item.name}
                             variant="secondary"
                           />
                         </Row>

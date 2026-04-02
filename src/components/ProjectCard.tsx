@@ -2,10 +2,11 @@
 
 import {
   AvatarGroup,
-  Carousel,
   Column,
   Flex,
   Heading,
+  Media,
+  Row,
   SmartLink,
   Text,
 } from "@once-ui-system/core";
@@ -31,33 +32,33 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   link,
 }) => {
   return (
-    <Column fillWidth gap="m">
-      <Carousel
-        sizes="(max-width: 960px) 100vw, 960px"
-        items={images.map((image) => ({
-          slide: image,
-          alt: title,
-        }))}
-      />
-      <Flex
-        s={{ direction: "column" }}
+    <Row fillWidth gap="m" vertical="center" s={{ direction: "column", align: "center" }}>
+      {images.length > 0 && (
+        <Media
+          src={images[0]}
+          alt={title}
+          aspectRatio="1 / 1"
+          radius="l"
+          maxWidth={40}
+          sizes="(max-width: 960px) 100vw, 960px"
+        />
+      )}
+      <Column
         fillWidth
-        paddingX="s"
+        paddingX="m"
         paddingTop="12"
         paddingBottom="24"
-        gap="l"
+        gap="m"
       >
         {title && (
-          <Flex flex={5}>
-            <Heading as="h2" wrap="balance" variant="heading-strong-xl">
-              {title}
-            </Heading>
-          </Flex>
+          <Heading as="h2" wrap="balance" variant="display-strong-xs">
+            {title}
+          </Heading>
         )}
         {(avatars?.length > 0 || description?.trim() || content?.trim()) && (
-          <Column flex={7} gap="16">
+          <Column gap="16">
             {description?.trim() && (
-              <Text wrap="balance" variant="body-default-s" onBackground="neutral-weak">
+              <Text wrap="balance" variant="body-default-l" onBackground="neutral-weak">
                 {description}
               </Text>
             )}
@@ -68,7 +69,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
                   style={{ margin: "0", width: "fit-content" }}
                   href="/about"
                 >
-                  <Text variant="body-default-s">Voir +</Text>
+                  <Text variant="body-default-m">Voir +</Text>
                 </SmartLink>
               )}
               {link && (
@@ -77,13 +78,13 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
                   style={{ margin: "0", width: "fit-content" }}
                   href={link}
                 >
-                  <Text variant="body-default-s">View project</Text>
+                  <Text variant="body-default-m">View project</Text>
                 </SmartLink>
               )}
             </Flex>
           </Column>
         )}
-      </Flex>
-    </Column>
+      </Column>
+    </Row>
   );
 };

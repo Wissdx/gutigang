@@ -1,4 +1,5 @@
 import { Row, IconButton, SmartLink, Text } from "@once-ui-system/core";
+import { SocialLink } from "@/components";
 import { person, social } from "@/resources";
 import styles from "./Footer.module.scss";
 
@@ -34,10 +35,11 @@ export const Footer = () => {
           {social.map(
             (item) =>
               item.link && (
-                <IconButton
+                <SocialLink
                   key={item.name}
-                  href={item.link}
+                  link={item.link}
                   icon={item.icon}
+                  name={item.name}
                   tooltip={item.name}
                   size="s"
                   variant="ghost"

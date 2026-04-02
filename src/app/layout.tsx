@@ -14,7 +14,8 @@ import {
   SpacingToken,
 } from "@once-ui-system/core";
 import { Footer, Header, RouteGuard, Providers } from "@/components";
-import { baseURL, effects, fonts, style, dataStyle, home } from "@/resources";
+import { baseURL, effects, style, dataStyle, home } from "@/resources";
+import { fonts } from "@/resources/fonts";
 
 export async function generateMetadata() {
   return Meta.generate({
@@ -108,7 +109,7 @@ export default async function RootLayout({
           as="body"
           background="page"
           fillWidth
-          style={{ minHeight: "100vh" }}
+          style={{ height: "100dvh" }}
           margin="0"
           padding="0"
           horizontal="center"
@@ -157,7 +158,13 @@ export default async function RootLayout({
           </RevealFx>
           <Flex fillWidth minHeight="16" s={{ hide: true }} />
           <Header />
-          <Flex zIndex={0} fillWidth padding="l" horizontal="center" flex={1}>
+          <Flex
+            zIndex={0}
+            fillWidth
+            horizontal="center"
+            flex={1}
+            overflowY="auto"
+          >
             <Flex horizontal="center" fillWidth minHeight="0">
               <RouteGuard>{children}</RouteGuard>
             </Flex>

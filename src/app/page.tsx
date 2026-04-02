@@ -30,7 +30,7 @@ export async function generateMetadata() {
 
 export default function Home() {
   return (
-    <Column maxWidth="m" gap="xl" paddingY="12" horizontal="center">
+    <Column fillWidth className="snap-container" horizontal="center">
       <Schema
         as="webPage"
         baseURL={baseURL}
@@ -44,7 +44,7 @@ export default function Home() {
           image: `${baseURL}${person.avatar}`,
         }}
       />
-      <Column fillWidth horizontal="center" gap="m">
+      <Column fillWidth horizontal="center" className="snap-section" paddingY="128">
         <Column maxWidth="s" horizontal="center" align="center">
           {home.featured.display && (
             <RevealFx
@@ -68,12 +68,12 @@ export default function Home() {
             </RevealFx>
           )}
           <RevealFx translateY="4" fillWidth horizontal="center" paddingBottom="16">
-            <Heading wrap="balance" variant="display-strong-l">
+            <Heading wrap="balance" variant="display-strong-xl">
               {home.headline}
             </Heading>
           </RevealFx>
           <RevealFx translateY="8" delay={0.2} fillWidth horizontal="center" paddingBottom="32">
-            <Text wrap="balance" onBackground="neutral-weak" variant="heading-default-xl">
+            <Text wrap="balance" onBackground="neutral-weak" variant="display-strong-xs">
               {home.subline}
             </Text>
           </RevealFx>
@@ -101,12 +101,18 @@ export default function Home() {
           </RevealFx>
         </Column>
       </Column>
-      <RevealFx translateY="16" delay={0.6}>
+      <Column fillWidth maxWidth="l" className="snap-section" horizontal="center" vertical="center">
         <Projects range={[1, 1]} />
-      </RevealFx>
-      
-      <Projects range={[2]} />
-      <Mailchimp />
+      </Column>
+
+      <Column fillWidth maxWidth="l" className="snap-section" horizontal="center" vertical="center">
+        <Projects range={[2, 2]} />
+      </Column>
+
+      <Column fillWidth maxWidth="l" className="snap-section" horizontal="center" vertical="center">
+        <Projects range={[3, 3]} />
+        <Mailchimp />
+      </Column>
     </Column>
   );
 }
