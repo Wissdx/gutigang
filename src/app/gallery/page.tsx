@@ -14,7 +14,7 @@ export async function generateMetadata() {
 
 export default function Gallery() {
   return (
-    <Flex maxWidth="l">
+    <Flex fillWidth direction="column" horizontal="center" maxWidth="l">
       <Schema
         as="webPage"
         baseURL={baseURL}

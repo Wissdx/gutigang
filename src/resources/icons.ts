@@ -73,6 +73,7 @@ export const iconLibrary: Record<string, IconType> = {
           height: dim,
           ...style,
         },
+        fill: "currentColor",
         viewBox: "104.15 203.03 985.29 435.63",
         xmlns: "http://www.w3.org/2000/svg",
       },
