@@ -3,6 +3,8 @@ import {
   Text,
   Button,
   Avatar,
+  Icon,
+  IconButton,
   RevealFx,
   Column,
   Badge,
@@ -76,27 +78,26 @@ export default function Home() {
             </Text>
           </RevealFx>
           <RevealFx paddingTop="12" delay={0.4} horizontal="center" paddingLeft="12">
-            <Button
-              id="about"
-              data-border="rounded"
-              href={about.path}
-              variant="secondary"
-              size="m"
-              weight="default"
-              arrowIcon
+            <Row
+              fitWidth
+              border="brand-alpha-medium"
+              background="brand-alpha-weak"
+              radius="full"
+              padding="4"
+              gap="8"
+              marginBottom="m"
+              vertical="center"
+              style={{ backdropFilter: "blur(var(--static-space-1))" }}
             >
-              <Row gap="8" vertical="center" paddingRight="4">
-                {about.avatar.display && (
-                  <Avatar
-                    marginRight="8"
-                    style={{ marginLeft: "-0.75rem" }}
-                    src={person.avatar}
-                    size="m"
-                  />
-                )}
-                {about.title}
-              </Row>
-            </Button>
+              <Icon paddingLeft="12" name="calendar" onBackground="brand-weak" />
+              <Row paddingX="8">Rejoindre le GutiGang</Row>
+              <IconButton
+                href={about.calendar?.link || about.path}
+                data-border="rounded"
+                variant="secondary"
+                icon="chevronRight"
+              />
+            </Row>
           </RevealFx>
         </Column>
       </Column>

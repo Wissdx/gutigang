@@ -13,7 +13,7 @@ const person: Person = {
 };
 
 const newsletter: Newsletter = {
-  display: true,
+  display: false,
   title: <>S'abonner à la newsletter de {person.firstName}</>,
   description: <>Une newsletter hebdomadaire sur l'entraînement, la performance et le coaching</>,
 };
@@ -51,7 +51,7 @@ const home: Home = {
   description: `Site officiel du GutiGang. Coaching en Force Athlétique, programmation et suivi par Julien Gutierrez.`,
   headline: <>GutiGang : Performance & Passion</>,
   featured: {
-    display: true,
+    display: false,
     title: (
       <Row gap="12" vertical="center">
         <strong className="ml-4">Nouveau</strong>{" "}
