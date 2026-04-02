@@ -26,7 +26,7 @@ export const Footer = () => {
           <Text paddingX="4">{person.name}</Text>
           <Text onBackground="neutral-weak">
             {/* L'utilisation de ce template nécessite attribution. Ne retirez pas le lien vers Once UI sauf si vous avez une licence Pro. */}
-            / Crée ton portfolio avec{" "}
+            / Portfolio basé sur {" "}
             <SmartLink href="https://once-ui.com/products/magic-portfolio">Once UI</SmartLink>
           </Text>
         </Text>
