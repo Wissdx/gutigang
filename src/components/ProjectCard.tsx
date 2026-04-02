@@ -34,14 +34,20 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   return (
     <Row fillWidth gap="m" vertical="center" s={{ direction: "column", align: "center", gap: "24" }}>
       {images.length > 0 && (
-        <Media
-          src={images[0]}
-          alt={title}
-          aspectRatio="1 / 1"
-          radius="l"
+        <Flex
           maxWidth={40}
-          sizes="(max-width: 960px) 100vw, 960px"
-        />
+          s={{ maxWidth: "100%", width: "100%" }}
+          style={{ overflow: "hidden" }}
+          radius="l"
+        >
+          <Media
+            src={images[0]}
+            alt={title}
+            aspectRatio="1 / 1"
+            radius="l"
+            sizes="(max-width: 960px) 100vw, 960px"
+          />
+        </Flex>
       )}
       <Column
         fillWidth

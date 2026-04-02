@@ -165,6 +165,7 @@ export default async function RootLayout({
             horizontal="center"
             flex={1}
             overflowY="auto"
+            className="main-content-scroll"
           >
             <Flex horizontal="center" fillWidth fillHeight direction="column" minHeight="0">
               <RouteGuard>{children}</RouteGuard>

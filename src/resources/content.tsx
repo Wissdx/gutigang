@@ -147,7 +147,7 @@ const about: About = {
             Vice-champion d'Europe Open (2024) et double champion d'Europe de l'Ouest (2021, 2022).
           </>,
           <>
-            Meilleures performances : Squat 195kg, Bench 122,5kg, Deadlift 242,5kg (Total 570kg).
+            Meilleures performances : Squat 205kg, Bench 122,5kg, Deadlift 242,5kg (Total 570kg).
           </>,
         ],
         images: [],

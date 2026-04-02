@@ -75,22 +75,23 @@ export const SocialLink: React.FC<SocialLinkProps> = ({
 
       {isEsn && (
         <Dialog
+          className="esn-dialog"
           isOpen={isDialogOpen}
           onClose={() => setIsDialogOpen(false)}
           title="Partenaire ESN"
           footer={
-            <Flex fillWidth gap="8" horizontal="end">
-              <Button variant="secondary" onClick={() => setIsDialogOpen(false)}>
+            <Flex gap="8" horizontal="end">
+              <Button variant="secondary" onClick={() => setIsDialogOpen(false)} size="s">
                 Annuler
               </Button>
-              <Button variant="primary" onClick={handleConfirm}>
+              <Button variant="primary" onClick={handleConfirm} size="s">
                 Continuer vers ESN
               </Button>
             </Flex>
           }
         >
-          <Flex direction="column" gap="12" paddingTop="12">
-            <Text variant="body-default-m">
+          <Flex direction="column" gap="12" paddingTop="12" s={{ gap: "8", paddingTop: "8" }}>
+            <Text variant="body-default-m" className="esn-popup-text">
               Vous allez être redirigé vers le site de compléments alimentaires ESN.
             </Text>
             <Row
@@ -101,8 +102,9 @@ export const SocialLink: React.FC<SocialLinkProps> = ({
               horizontal="center"
               vertical="center"
               gap="12"
+              s={{ padding: "8", gap: "8" }}
             >
-              <Text variant="display-strong-xs" onBackground="brand-strong" align="center">
+              <Text variant="display-strong-xs" onBackground="brand-strong" align="center" className="esn-popup-code">
                 CODE : GUTI
               </Text>
               <IconButton
@@ -113,7 +115,7 @@ export const SocialLink: React.FC<SocialLinkProps> = ({
                 onClick={copyToClipboard}
               />
             </Row>
-            <Text variant="body-default-s" onBackground="neutral-weak">
+            <Text variant="body-default-s" onBackground="neutral-weak" className="esn-popup-subtext">
               Utilisez ce code lors de votre commande pour soutenir le coach !
             </Text>
           </Flex>
