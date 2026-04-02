@@ -85,7 +85,8 @@ const about: About = {
   },
   calendar: {
     display: true,
-    link: "https://cal.com",
+    // rediriger vers la page /work
+    link: "/work",
   },
   intro: {
     display: true,
@@ -239,11 +240,10 @@ const blog: Blog = {
 
 const work: Work = {
   path: "/work",
-  label: "Projets",
-  title: `Projets – ${person.name}`,
-  description: `Projets et travaux de ${person.name}`,
-  // Create new project pages by adding a new .mdx file to app/blog/posts
-  // All projects will be listed on the /home and /work routes
+  label: "Coaching",
+  title: `Coaching – ${person.name}`,
+  description: `Contactez ${person.name} pour discuter d'un accompagnement personnalisé en Force Athlétique. Envoyez un email pour planifier un appel de découverte.`,
+  // This route is focused on coaching/contact rather than project listings
 };
 
 const gallery: Gallery = {
