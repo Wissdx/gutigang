@@ -166,7 +166,7 @@ export default async function RootLayout({
             flex={1}
             overflowY="auto"
           >
-            <Flex horizontal="center" fillWidth direction="column" minHeight="0">
+            <Flex horizontal="center" fillWidth fillHeight direction="column" minHeight="0">
               <RouteGuard>{children}</RouteGuard>
             </Flex>
           </Flex>

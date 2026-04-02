@@ -32,7 +32,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   link,
 }) => {
   return (
-    <Row fillWidth gap="m" vertical="center" s={{ direction: "column", align: "center" }}>
+    <Row fillWidth gap="m" vertical="center" s={{ direction: "column", align: "center", gap: "24" }}>
       {images.length > 0 && (
         <Media
           src={images[0]}
@@ -46,6 +46,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
       <Column
         fillWidth
         paddingX="m"
+        s={{ paddingX: "0", textAlign: "center" }}
         paddingTop="12"
         paddingBottom="24"
         gap="m"

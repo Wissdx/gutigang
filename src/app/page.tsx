@@ -44,8 +44,15 @@ export default function Home() {
           image: `${baseURL}${person.avatar}`,
         }}
       />
-      <Column fillWidth horizontal="center" className="snap-section" paddingY="128">
+      <Column fillWidth horizontal="center" className="snap-section" paddingX="24">
         <Column maxWidth="s" horizontal="center" align="center">
+          <RevealFx translateY="4" fillWidth horizontal="center" paddingBottom="16">
+            <Avatar
+              src={person.avatar}
+              size="xl"
+              style={{ marginBottom: "var(--static-space-24)" }}
+            />
+          </RevealFx>
           {home.featured.display && (
             <RevealFx
               fillWidth
@@ -68,12 +75,12 @@ export default function Home() {
             </RevealFx>
           )}
           <RevealFx translateY="4" fillWidth horizontal="center" paddingBottom="16">
-            <Heading wrap="balance" variant="display-strong-xl">
+            <Heading wrap="balance" variant="display-strong-xl" className="responsive-headline">
               {home.headline}
             </Heading>
           </RevealFx>
           <RevealFx translateY="8" delay={0.2} fillWidth horizontal="center" paddingBottom="32">
-            <Text wrap="balance" onBackground="neutral-weak" variant="display-strong-xs">
+            <Text wrap="balance" onBackground="neutral-weak" variant="display-strong-xs" className="responsive-subline">
               {home.subline}
             </Text>
           </RevealFx>
@@ -101,15 +108,15 @@ export default function Home() {
           </RevealFx>
         </Column>
       </Column>
-      <Column fillWidth maxWidth="l" className="snap-section" horizontal="center" vertical="center">
+      <Column fillWidth maxWidth="l" className="snap-section" horizontal="center" vertical="center" paddingX="24">
         <Projects range={[1, 1]} />
       </Column>
 
-      <Column fillWidth maxWidth="l" className="snap-section" horizontal="center" vertical="center">
+      <Column fillWidth maxWidth="l" className="snap-section" horizontal="center" vertical="center" paddingX="24">
         <Projects range={[2, 2]} />
       </Column>
 
-      <Column fillWidth maxWidth="l" className="snap-section" horizontal="center" vertical="center">
+      <Column fillWidth maxWidth="l" className="snap-section" horizontal="center" vertical="center" paddingX="24">
         <Projects range={[3, 3]} />
         <Mailchimp />
       </Column>
